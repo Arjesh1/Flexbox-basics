@@ -1,0 +1,47 @@
+body{
+    font-size: 25px;
+}
+
+.parent{
+    background-color: aqua;
+    padding: 10px;
+    height: 60vh;
+
+    /* flex */
+    /* to make the box come inline */
+    display: flex;
+
+    /* to make the box ajust spacing */
+    justify-content: space-between;
+    /* to make the box adjuct as pr screen */
+    flex-wrap: wrap; 
+}
+
+.parent > div{
+    background-color: bisque;
+     margin: 10px;
+     width: 70px;
+     height: 70px;
+
+     /* flex */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.parent > div:nth-child(odd){
+    background-color: blueviolet;
+}
+
+.item-4{
+    align-self: flex-start;
+}
+.item-6{
+    align-self: flex-end;
+}
+
+.item-7{
+    order: -1;
+}
+
+
